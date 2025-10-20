@@ -1,11 +1,13 @@
 # Build artifacts
-build/
+build/*
+!build/.gitkeep
 *.o
 *.out
 *.exe
 
 # Output images
-output/
+output/*
+!output/.gitkeep
 *.ppm
 *.png
 *.jpg
