@@ -1,0 +1,28 @@
+# Build artifacts
+build/
+*.o
+*.out
+*.exe
+
+# Output images
+output/
+*.ppm
+*.png
+*.jpg
+
+# IDE files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Debugging
+*.dSYM/
