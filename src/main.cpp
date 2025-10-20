@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "vec3.h"
+
 int main() {
   int nx = 200;
   int ny = 100;
