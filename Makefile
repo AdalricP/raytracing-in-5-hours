@@ -10,6 +10,9 @@ SOURCES = $(wildcard $(SRC_DIR)/*.cpp)
 
 all: $(TARGET)
 
+# Explicit build target alias for convenience
+build: $(TARGET)
+
 $(TARGET): $(SOURCES) | $(BUILD_DIR)
 	$(CXX) $(CXXFLAGS) $(SOURCES) -o $(TARGET)
 
@@ -26,4 +29,7 @@ run: $(TARGET) | $(OUTPUT_DIR)
 clean:
 	rm -rf $(BUILD_DIR) $(OUTPUT_DIR)
 
-.PHONY: all run clean
+# Play target: clean, build, then run
+play: clean build run
+
+.PHONY: all build run clean play
